@@ -12,21 +12,24 @@ pip3 install dist/*
 
 `get_doc_strings(rootdir)` returns a dict of class names and there docstring
 
+Add to python path:
 ```
 from get_doc_strings import get_doc_strings
+```
+
+Call Function:
+```
 docstrings = get_doc_strings("/rel/or/abs/path/to/rootdir/to/search/from")
 ```
 
 ##### Command Line Interface:
 
 Add to python path:
-
 ```
 export PYTHONPATH=~/.local/lib/python3.8/site-packages/get_doc_strings
 ```
 
 Args:
-
 ```
 usage: get_doc_strings.py [-h] --dir DIR [-v]
 
@@ -37,7 +40,6 @@ optional arguments:
 ```
 
 For example:
-
 ```
 python3 -m get_doc_strings --dir .
 ```
