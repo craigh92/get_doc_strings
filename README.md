@@ -20,6 +20,14 @@ docstrings = get_doc_strings("/rel/or/abs/path/to/rootdir/to/search/from")
 ##### Command Line Interface:
 
 ```
+export PYTHONPATH=~/.local/lib/python3.8/site-packages/get_doc_strings
+```
+```
+
+python3 -m get_doc_strings
+```
+
+```
 usage: get_doc_strings.py [-h] --dir DIR [-v]
 
 optional arguments:
