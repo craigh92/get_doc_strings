@@ -23,7 +23,11 @@ def module_from_string(path : str):
     mod = importlib.util.module_from_spec(spec)
     
     #Execute the module (so the classes get defined) and return it
-    spec.loader.exec_module(mod) # Be carefull. If 'if __name__ == "__main__":' was not used this runs the code
+    try:
+        spec.loader.exec_module(mod)
+    except Exception as e:
+        logging.error("ERROR in {} : {}".format(name, str(e)))
+
     return mod
 
 def get_doc_strings(rootdir):

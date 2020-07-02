@@ -1,4 +1,5 @@
- 
+import thisdoesnotexistjnjkbjkbjkrbkrbk
+
 class NoDocStr2:
     pass
 
