@@ -19,16 +19,25 @@ docstrings = get_doc_strings("/rel/or/abs/path/to/rootdir/to/search/from")
 
 ##### Command Line Interface:
 
-```
-export PYTHONPATH=~/.local/lib/python3.8/site-packages/get_doc_strings
-python3 -m get_doc_strings
-```
+Add to python path:
 
 ```
-usage: get_doc_strings [-h] --dir DIR [-v]
+export PYTHONPATH=~/.local/lib/python3.8/site-packages/get_doc_strings
+```
+
+Args:
+
+```
+usage: get_doc_strings.py [-h] --dir DIR [-v]
 
 optional arguments:
   -h, --help     show this help message and exit
   --dir DIR      The directory to recursivley search from
   -v, --verbose  Print debug messages
+```
+
+For example:
+
+```
+python3 -m get_doc_strings --dir .
 ```
