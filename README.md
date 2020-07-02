@@ -3,7 +3,7 @@ Recursivley browse a directory and return all of the classes in all python files
 ## Install
 ```
 python3 setup.py sdist bdist_wheel
-pip3 install dist/get_doc_strings-0.0.1-py3-none-any.whl
+pip3 install dist/*
 ```
 
 ## Quick Start:
