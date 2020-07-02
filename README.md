@@ -1,3 +1,5 @@
+Recursivley browse a directory and return all of the classes in all python files, with the doc string for that class. Currently classes only, no function docstrings.
+
 ### Use 
 
 ##### Python:
