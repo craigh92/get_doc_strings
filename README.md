@@ -11,7 +11,7 @@ from get_doc_strings import get_doc_strings
 docstrings = get_doc_strings("/rel/or/abs/path/to/rootdir/to/search/from")
 ```
 
-##### CLI
+##### Command Line Interface:
 
 ```
 usage: get_doc_strings.py [-h] --dir DIR [-v]
